@@ -1,0 +1,35 @@
+.comments-page {
+    background-color: rgb(219, 213, 213);
+    width: 50%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &.hide{
+        display: none;
+    }
+
+    input{
+        border-style: none;
+        padding: 5px;
+        margin-right: 10px;
+        border-radius: 10px;
+    }
+    button{
+        border-style: none;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    form{
+        margin-left: 50px;
+        display: flex;
+
+        img{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+    }
+}

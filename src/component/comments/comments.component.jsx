@@ -3,16 +3,16 @@ import React from 'react'
 
 import './comments.styles.scss';
 
-const CommentsPage = ({getComment, comments, currentuser}) => {
-    let commentdetails = comments.filter((comments) => comments.userId == currentuser )
+const CommentList = ({getComment, comments, currentuser}) => {
+    let commentdetails = comments.filter((comments) => comments.userId == currentuser)
     .map(({userId, id , body, time, profilePicture}) => {
     return (
-        <div className='comments-page' key={id} >
+        <div className='comments-list'  key ={id} id={userId} >
             <ul>
                 <li>
                     <div className='comments'>
                         <img src={profilePicture} alt="user"/>
-                        <span>{body.substr(0,120)+"."}</span>
+                        <span>{body.substr(0,100)+"."}</span>
                     </div>
                 </li>
             </ul>
@@ -25,4 +25,4 @@ const CommentsPage = ({getComment, comments, currentuser}) => {
  
 }
 
-export default CommentsPage;
+export default CommentList;
