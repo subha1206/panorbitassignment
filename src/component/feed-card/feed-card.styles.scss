@@ -1,0 +1,76 @@
+.container{
+    width: 65%;
+    // border: 1px solid black;
+    margin: auto;
+    padding: 15px;
+    transition: all .5s ease-in-out;
+
+    &.hide{
+        display: none;
+    }
+    .feed-user{
+        display: flex;
+        justify-content: left;
+        span{
+            font-size: 15px;
+        }
+        img{
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            float: left;
+            margin-right: 8px;
+        }
+    }
+
+    .feed-header{
+        float: left;
+        text-align: left;
+        span{
+            float: left;
+            padding: 5px;
+        }
+    }
+
+    .feed-photo{
+        img{
+            border-radius: 10px;
+        }
+    }
+
+    .feed-function{
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        .like-comments{
+            img{   
+             &:nth-child(1){
+                 margin-right: 25px;
+             }
+             &:nth-child(2){ 
+                 margin-left: 20px;
+                 margin-right: 10px;
+             }
+            }
+        }
+        .add-comment{
+            cursor: pointer;
+            span{
+                font-size: 15px;
+                &:hover{
+                    font-size: 16px;
+                }
+            }
+            img{
+            border-radius: 50%;
+            width: 18px;
+            height: 18px;
+            margin-left: 8px;
+            &:hover{
+                width: 20px;
+                height: 20px;
+            }
+            }
+        }
+    }
+}

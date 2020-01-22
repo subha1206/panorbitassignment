@@ -1,0 +1,19 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+   padding: 15px;
+    
+    .logos{
+    
+        .hamburger{
+            margin-bottom: 15px;
+        }
+    }
+    .user{
+        img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+    }
+}
